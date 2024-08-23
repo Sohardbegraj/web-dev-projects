@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    display: flex;
+    justify-content: center;
+    background: rgba(2, 49, 33, 0.51);
+  }
+  .wrapper{
+    margin-top: 250px;
+    border-radius: 30px;
+    background: #ff7373;
+    width: 50%;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #3692f4;
+    font-size: 30px;
+    padding: 30px 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 0 0 30px 30px;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  input {
+    margin: 0;
+    border: none;
+    
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+  }
+  
+  .addBtn:hover {
+    background-color: #54e029;
+  }
+  .newdiv{
+    background: rgb(157, 180, 193);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .deletebtn{
+    background: red;
+    color: azure;
+    padding: 4px;
+    font-size: 15px;
+  }

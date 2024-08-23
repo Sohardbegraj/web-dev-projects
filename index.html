@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TODO</title>
+</head>
+<body>
+    <div class="wrapper" style="height: 50%;">
+        <h1 style="font-size: 50px;color: whitesmoke;display: flex;justify-content: center;">TODO</h1>
+        <div id="myDIV" class="header">
+        <input type="text" id="myInput" placeholder="add a todo">
+        <button onclick="addtodo()" class="addBtn">ADD TODO</button><br>
+    </div>
+    </div>
+</body>
+<script >
+    function addtodo(){
+    let todo = document.querySelector("input");
+    const value=todo.value;
+    const span=document.createElement("span");
+    const button=document.createElement("button");
+    span.innerHTML=value;
+    button.innerHTML="delete";
+    button.setAttribute("class","deletebtn")
+    button.setAttribute("onclick","deletetodo(event, this);");
+    const divel=document.createElement("div");
+    divel.setAttribute("class","newdiv");
+    divel.appendChild(span);
+    divel.appendChild(button);
+    document.querySelector("#myDIV").appendChild(divel);
+}
+function deletetodo(){
+    event.target.parentNode.remove();
+}
+</script>
+</html>
